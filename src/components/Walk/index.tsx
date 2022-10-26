@@ -4,8 +4,8 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 export const Walk = () => {
-    const [time,setTime] = useState(1)
-    const [isStop,setIsStop]= useState(false)
+    const [time,setTime] = useState(0)
+    const [isStop,setIsStop]= useState(true)
 
     const toggleStop = ()=> setIsStop((value)=>!value)
 
@@ -16,7 +16,6 @@ export const Walk = () => {
         },1000)
         }
 
-        
     },[time,isStop])
 
   return (

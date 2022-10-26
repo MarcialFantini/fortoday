@@ -14,7 +14,8 @@ import { Calories } from './components/Calories'
 import { Heart } from './components/Heart'
 import calories from './assets/calories.png'
 import heart from './assets/heart.png'
-
+import { Training } from './components/Training'
+import clock from './assets/clok.png'
 
 function App() {
 
@@ -56,6 +57,12 @@ function App() {
       src={heart}
       >
         <Heart/>
+      </Card>
+      <Card
+      title='Training'
+      src={clock}
+      >
+        <Training/>
       </Card>
       </ContainerCard>
     </div>
